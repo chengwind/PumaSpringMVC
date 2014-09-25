@@ -98,12 +98,12 @@ public class TaskController {
 		return "redirect:/task/";
 	}
 
-	@ModelAttribute
-	public void getTask(@RequestParam(value = "id", defaultValue = "-1") String id, Model model) {
-		if (!"-1".equals(id)) {
-			model.addAttribute("task", taskService.getTask(id));
-		}
-	}
+//	@ModelAttribute
+//	public void getTask(@RequestParam(value = "id", defaultValue = "-1") String id, Model model) {
+//		if (!"-1".equals(id)) {
+//			model.addAttribute("task", taskService.getTask(id));
+//		}
+//	}
 
 	/**
 	 * 取出Shiro中的当前用户Id.
